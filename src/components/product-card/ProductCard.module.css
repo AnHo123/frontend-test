@@ -1,0 +1,27 @@
+.root {
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 0.625rem 0.625rem 1.25rem;
+    transition: border 0.3s ease-in-out;
+    max-width: 24rem;
+    border: 0.125rem solid transparent;
+    margin: 1rem;
+    /* width = screen width - margin x * item per slide - root padding x */
+    width: calc(100vw - 1rem * 2 * 1 - 2rem);
+
+    @screen md {
+        padding: 0.75rem 0.75rem 1.5rem;
+        max-width: 28rem;
+        width: calc((100vw - 1rem * 2 * 2 - 6rem) / 2);
+    }
+
+    @screen xl {
+        padding: 1rem 1rem 1.75rem;
+        margin: 1.25rem;
+        box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
+        width: calc((100vw - 1.25rem * 2 * 3 - 6rem) / 3);
+    }
+}
+
+.root.active {
+    border: 0.125rem solid theme('colors.highlight');
+}
