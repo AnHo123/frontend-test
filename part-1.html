@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./part-1.css" />
+  </head>
+  <body>
+    <section class="carousel-container">
+      <h1 class="carousel__title">Shadowfang Forge</h1>
+
+      <!-- Product Carousel -->
+      <div class="carousel">
+        <div data-id="0" class="carousel__item">
+          <img
+            class="carousel-item__image"
+            src="./weapons/weapon-1.jpeg"
+            alt="Weapon 1"
+          />
+          <h2 class="carousel-item__title">Iron Fang Dagger</h2>
+          <p class="carousel-item__description">
+            Forged in the mountain forges of Halgar.
+          </p>
+        </div>
+        <div data-id="1" class="carousel__item">
+          <img
+            class="carousel-item__image"
+            src="./weapons/weapon-2.jpeg"
+            alt="Weapon 2"
+          />
+          <h2 class="carousel-item__title">Steel Longsword</h2>
+          <p class="carousel-item__description">
+            A finely balanced weapon made from tempered steel, the Steel
+            Longsword is a staple of many knightly orders.
+          </p>
+        </div>
+        <div data-id="2" class="carousel__item">
+          <img
+            class="carousel-item__image"
+            src="./weapons/weapon-3.jpeg"
+            alt="Weapon 3"
+          />
+          <h2 class="carousel-item__title">Orcish Cleaver</h2>
+          <p class="carousel-item__description">
+            This crude but terrifyingly effective cleaver was designed by orc
+            blacksmiths to maximize raw destruction. While lacking elegance, its
+            sheer weight and brutal edge can cleave through armor and bone
+            alike, making it a fearsome weapon on any battlefield.
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal">
+        <div class="modal__content-wrapper">
+          <div class="modal__content">
+            <div class="modal__close">&times;</div>
+            <h2 class="modal__title"></h2>
+            <img class="modal__image" src="" alt="popup image" />
+            <p class="modal__description"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./part-2.js"></script>
+  </body>
+</html>
