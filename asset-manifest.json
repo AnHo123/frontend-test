@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/AnHo123/frontend-test/static/css/main.25bd7d95.css",
-    "main.js": "/AnHo123/frontend-test/static/js/main.e577b603.js",
-    "index.html": "/AnHo123/frontend-test/index.html",
-    "main.25bd7d95.css.map": "/AnHo123/frontend-test/static/css/main.25bd7d95.css.map",
-    "main.e577b603.js.map": "/AnHo123/frontend-test/static/js/main.e577b603.js.map"
+    "main.css": "/frontend-test/static/css/main.25bd7d95.css",
+    "main.js": "/frontend-test/static/js/main.e577b603.js",
+    "index.html": "/frontend-test/index.html",
+    "main.25bd7d95.css.map": "/frontend-test/static/css/main.25bd7d95.css.map",
+    "main.e577b603.js.map": "/frontend-test/static/js/main.e577b603.js.map"
   },
   "entrypoints": [
     "static/css/main.25bd7d95.css",
