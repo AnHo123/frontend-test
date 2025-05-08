@@ -25,7 +25,10 @@ export default function ProductCarousel() {
         if (dragOffset > cardWidth / 3 || dragVelocity > 500) {
             // Dragged right, go to the previous card
             setActiveCard((prev) => Math.max(prev - 1, 0))
-        } else if (dragOffset < -cardWidth / 3 || dragVelocity < -500) {
+        } else if (
+            activeCard < Math.ceil(productList.length / cardPerView) - 1 &&
+            (dragOffset < -cardWidth / 3 || dragVelocity < -500)
+        ) {
             // Dragged left, go to the next card
             setActiveCard((prev) => Math.min(prev + 1, productList.length - 1))
         } else {
