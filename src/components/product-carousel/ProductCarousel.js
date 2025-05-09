@@ -130,7 +130,7 @@ export default function ProductCarousel() {
             </motion.div>
             <div className="mt-5 flex w-full items-center justify-center gap-5 md:mt-8">
                 <button
-                    className={`rounded-md bg-light-gray px-3 py-1 text-body-2 transition-all hover:text-highlight md:px-4 md:py-1.5 md:text-body-1 ${
+                    className={`bg-background rounded-md px-3 py-1 text-body-2 transition-all hover:text-highlight md:px-4 md:py-1.5 md:text-body-1 ${
                         activeCard === 0
                             ? 'user-select-none pointer-events-none select-none opacity-80'
                             : ''
@@ -166,7 +166,7 @@ export default function ProductCarousel() {
                     / {Math.ceil(productList.length / cardPerView)}
                 </div>
                 <button
-                    className={`rounded-md bg-light-gray px-3 py-1 text-body-2 transition-all hover:text-highlight md:px-4 md:py-1.5 md:text-body-1 ${
+                    className={`bg-background rounded-md px-3 py-1 text-body-2 transition-all hover:text-highlight md:px-4 md:py-1.5 md:text-body-1 ${
                         activeCard ===
                         Math.ceil(productList.length / cardPerView) - 1
                             ? 'user-select-none pointer-events-none select-none opacity-80'
